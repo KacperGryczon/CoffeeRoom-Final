@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', San Francisco, Roboto, Arial;
+    scroll-behavior: smooth;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 5px 0px;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+}
+
+.nav img{
+    width: 70px;
+    height: 70px;
+    padding-left: 15px;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    padding-right: 30px;
+    list-style-type: none;
+}
+
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-image{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://images.unsplash.com/photo-1521017432531-fbd92d768814?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBzaG9wJTIwaW50ZXJpb3J8ZW58MXx8fHwxNzU5OTY0OTYzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral");
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.fa-solid{
+    font-size: 4rem;
+    color: white;
+}
+
+.nav-heading1{
+    letter-spacing: 2px;
+    font-size: 5.5rem;
+    font-weight: 400;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.nav-heading2{
+    font-weight: 350;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.nav-image button{
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 5px;
+}
+.nav-image button:hover{
+    cursor: pointer;
+    opacity: 60%;
+}
+.nav-image button:active{
+    opacity: 40%;
+}
+
+/* oNas */
+
+.oNas{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    justify-self: center;
+    gap: 5em;
+    margin: 50px 0px;
+}
+
+.oNas .oNas-text{
+    min-width: 400px;
+    width: 100%;
+}
+.oNas .oNas-text h2{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.oNas .oNas-text h3{
+    color: rgb(143, 143, 143);
+}
+
+.oNas-img{
+    border-radius: 10px;
+    opacity: 100%;
+    transition: 200ms ease-in-out;
+    width: 100%;
+    min-width: 300px;
+    height: auto;
+    flex-shrink: 1;
+}
+
+.oNas-img img {
+    width: 100%;         
+    height: auto;        
+    display: block;      
+    border-radius: 10px; 
+}
+
+.oNas-img:hover{
+    opacity: 90%;
+}
+
+/* MENU */
+.menu{
+    background-color: rgb(245, 245, 245);  
+    padding: 10px 0;  
+}
+
+.menuContainer{
+    width: 80%;
+    justify-self: center;
+}
+.menuContainer h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;    
+}
+.menuContainer h3{
+    text-align: center;
+    padding: 10px 0px;
+    color: rgb(143, 143, 143);
+}
+
+.menuContainer .menu-images{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.menuContainer .menu-images img{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    padding: 20px;
+    border-radius: 30px;
+    min-width: 200px;
+    min-height: auto;
+    opacity: 100%;
+    transition: 200ms ease-in-out;
+}
+
+.menuContainer .menu-images img:hover{
+    opacity: 90%;
+}
+
+.menuContainer .menuCards{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 1em;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.menuContainer .menuCards .card{
+    margin: 0;     /* Remove horizontal margin for pure space-between */
+    border-radius: 15px;
+    padding: 10px 10px;
+    width: 30%;
+    background-color: white;
+    box-shadow: 8px 5px 16px -1px rgba(158,158,158,0.78);
+    -webkit-box-shadow: 8px 5px 16px -1px rgba(158,158,158,0.78);
+    -moz-box-shadow: 8px 5px 16px -1px rgba(158,158,158,0.78);
+}
+
+.card h3{
+    text-align: start;
+}
+
+.menuContainer .menuCards .card section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nazwa cena"
+    "opis opis";
+}
+.menuContainer .menuCards .card section > .nazwa{
+    grid-area: nazwa;
+    text-align: start;
+    color: black;
+    font-weight: 500;
+}
+.menuContainer .menuCards .card section > .cena{
+    grid-area: cena;
+    text-align: end;
+    color: black;
+    font-weight: 500;
+}
+.menuContainer .menuCards .card section > .opis{
+    grid-area: opis;
+    font-size: 16px;
+    text-align: start;
+    padding: 4px;
+}
+
+/* KONTAKT */
+
+.kontakt{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    justify-self: center;
+}
+
+.kontakt .kontakt-h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400; 
+}
+.kontakt .kontakt-h3{
+    text-align: center;
+    padding: 10px 0px;
+    color: rgb(143, 143, 143);
+}
+
+.kontakt .konaktElementsContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 50px 0;
+    gap: 1em;
+    color: rgb(143, 143, 143);
+    font-size: 0.8rem;
+    flex-wrap: wrap;
+}
+.kontakt .konaktElementsContainer #kontaktElement{
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+}
+.kontakt .konaktElementsContainer #kontaktElement h2{
+    margin: 30px 0;
+}
+.kontakt .konaktElementsContainer #kontaktElement .dodatkowe{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+iframe{
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+/* FOOTER */
+footer{
+    height: 500px;
+}
+
+@media only screen and (max-width: 1200px){
+  #kontaktElement{ flex-basis: 45%; }
+  .menuCards .card{ flex-basis: 100%;}
+}
+
+
+@media only screen and (max-width: 1024px){
+  #kontaktElement{ flex-basis: 100%; }
+  .oNas{flex-wrap: wrap;}
+  .oNas-img img{text-align: center;}
+}
