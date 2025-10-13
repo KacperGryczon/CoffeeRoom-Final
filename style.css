@@ -184,7 +184,7 @@ body{
 .menuContainer .menuCards .card{
     margin: 0;     /* Remove horizontal margin for pure space-between */
     border-radius: 15px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     width: 30%;
     background-color: white;
     box-shadow: 8px 5px 16px -1px rgba(158,158,158,0.78);
