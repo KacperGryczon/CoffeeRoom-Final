@@ -114,7 +114,6 @@ body{
     opacity: 100%;
     transition: 200ms ease-in-out;
     width: 100%;
-    min-width: 300px;
     height: auto;
     flex-shrink: 1;
 }
@@ -309,19 +308,20 @@ footer{
 
 @media only screen and (max-width: 800px){
     .oNas .oNas-text h2{font-size: 2rem;}
-    .oNas .oNas-text h3{font-size: 1rem; width: 90%;}
+    .oNas .oNas-text h3{font-size: 1rem; width: 100%;}
     .menu-images{flex-wrap: wrap; justify-content: center;}
     .nav-buttons-container{flex-wrap: wrap;}
     .nav-buttons-container button{width: 100%;}
 }
 
 @media only screen and (max-width: 500px){
+    .oNas .oNas-text h3{font-size: 1rem; width: 100%;}
     .openSidebar, .closeSidebar{
         display: block;
     }
     .openSidebar{
         justify-self: end;
-        padding: 20px;
+        padding: 5px;
         background: transparent;
         border: none;
         cursor: pointer;
