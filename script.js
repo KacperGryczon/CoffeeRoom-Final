@@ -9,7 +9,6 @@ function closeSidebar(){
 };
 
 document.addEventListener('click', function(e){
-    
     const openBtn = e.target.closest('.openSidebar');
     const closeBtn = e.target.closest('.closeSidebar');
     if (openBtn) return;
