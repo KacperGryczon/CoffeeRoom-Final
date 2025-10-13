@@ -4,6 +4,9 @@
     font-family: 'Segoe UI', San Francisco, Roboto, Arial;
     scroll-behavior: smooth;
 }
+body{
+    width: 100%;
+}
 
 .nav{
     display: flex;
@@ -130,6 +133,7 @@
 .menu{
     background-color: rgb(245, 245, 245);  
     padding: 10px 0;  
+    margin: 20px 0;
 }
 
 .menuContainer{
@@ -180,7 +184,7 @@
 .menuContainer .menuCards .card{
     margin: 0;     /* Remove horizontal margin for pure space-between */
     border-radius: 15px;
-    padding: 10px 10px;
+    padding: 10px 20px;
     width: 30%;
     background-color: white;
     box-shadow: 8px 5px 16px -1px rgba(158,158,158,0.78);
@@ -190,6 +194,7 @@
 
 .card h3{
     text-align: start;
+    color: rgb(85, 85, 85);
 }
 
 .menuContainer .menuCards .card section{
@@ -222,7 +227,7 @@
 /* KONTAKT */
 
 .kontakt{
-    margin: 20px 0px;
+    margin: 40px 0px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -252,7 +257,7 @@
     flex-wrap: wrap;
 }
 .kontakt .konaktElementsContainer #kontaktElement{
-    border: 2px solid black;
+    border: 2px solid rgb(95, 95, 95);
     padding: 15px;
     border-radius: 15px;
     width: 20%;
@@ -282,13 +287,23 @@ footer{
 }
 
 @media only screen and (max-width: 1200px){
-  #kontaktElement{ flex-basis: 45%; }
-  .menuCards .card{ flex-basis: 100%;}
+    #kontaktElement{ flex-basis: 45%;}
+    .menuCards .card{ flex-basis: 100%;}
 }
 
 
 @media only screen and (max-width: 1024px){
-  #kontaktElement{ flex-basis: 100%; }
-  .oNas{flex-wrap: wrap;}
-  .oNas-img img{text-align: center;}
+    #kontaktElement{ flex-basis: 100%; height: 70%; }
+    .oNas{flex-wrap: wrap;}
+    .oNas-img{border: 5px solid black; width: 100%;}
+    .oNas-img img{text-align: center; border: 5px solid black;}
+    .nav-heading1{font-size: 4.5rem;}
+}
+
+@media only screen and (max-width: 800px){
+    .oNas .oNas-text h2{font-size: 2rem;}
+    .oNas .oNas-text h3{font-size: 1rem;}
+    .menu-images{flex-wrap: wrap; justify-content: center;}
+    .nav-buttons-container{flex-wrap: wrap;}
+    .nav-buttons-container button{width: 100%;}
 }
