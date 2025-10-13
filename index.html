@@ -6,13 +6,20 @@
     <title>Coffe Room</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://kit.fontawesome.com/1017934682.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/1017934682.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="container-500px">
+        <p>Coffe Room <i class="fa-solid fa-mug-hot fa-sm" style="color: #000000;"></i></p>
+        <button class="openSidebar" onclick="openSidebar()">
+            <i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i>
+        </button>
+    </div>
     <nav class="nav">
-            <img src="/images/coffeeRoomLogo.png" alt="">
+            <img src="/images/coffeeRoomLogo.png" alt="logo.png">
             <ul>
+                <li id="first-line-navUl"><div class="first-line-navUl-firstElement"> Coffe Room <i class="fa-solid fa-mug-hot fa-sm" style="color: #000000;"></i> </div> <button class="closeSidebar" onclick="closeSidebar()"> <i class="fa-solid fa-xmark fa-2xl" style="color: #000000;"></i> </button> </li>
                 <li><a href="#start">Start</a></li>
                 <li><a href="#oNas">O Nas</a></li>
                 <li><a href="#menu">Menu</a></li>

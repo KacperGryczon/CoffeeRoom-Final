@@ -66,6 +66,7 @@ body{
     font-weight: 350;
     padding-bottom: 20px;
     text-align: center;
+    align-self: center;
 }
 
 .nav-image button{
@@ -274,7 +275,13 @@ body{
     margin-bottom: 20px;
 }
 
+.openSidebar, .closeSidebar, #first-line-navUl{
+        display: none;
+    }
 
+.container-500px{
+    display: none;
+}
 iframe{
     width: 100%;
     border-radius: 15px;
@@ -306,4 +313,80 @@ footer{
     .menu-images{flex-wrap: wrap; justify-content: center;}
     .nav-buttons-container{flex-wrap: wrap;}
     .nav-buttons-container button{width: 100%;}
+}
+
+@media only screen and (max-width: 500px){
+    .openSidebar, .closeSidebar{
+        display: block;
+    }
+    .openSidebar{
+        justify-self: end;
+        padding: 10px;
+        background: transparent;
+        border: none;
+    }
+    .container-500px{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+    .container-500px p{
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .container-500px p i{
+        padding: 0 10px;
+    }
+    .nav{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 30%;
+        width: 100%;
+        z-index: 2001;
+        border-left: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        transition: top 300ms ease-out;
+    }
+    .nav.show{
+        right: 0;
+        border-bottom: 1px solid black;
+    }
+    .nav img{
+        display: none;
+    }
+    .nav ul{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .nav li{
+        text-align: start;
+        margin: 10px;
+        width: 100%;
+    }
+    .nav a{
+        width: 100%;
+        padding: 20px;
+        font-weight: 400;
+    }
+    #first-line-navUl{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid gray;
+        font-size: 1.1rem;
+        font-weight: 500;
+        width: 98%;
+    }
+    #first-line-navUl button{
+        background: transparent;
+        border: none;
+        margin-right: 20px;
+        cursor: pointer;
+    }
 }
