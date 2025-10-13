@@ -457,7 +457,8 @@ footer .userInterface{
         border-bottom: 1px solid gray;
         font-size: 1.1rem;
         font-weight: 500;
-        width: 90%;
+        width: 100%;
+        justify-self: center;
     }
     #first-line-navUl button{
         background: transparent;
