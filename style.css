@@ -5,7 +5,8 @@
     scroll-behavior: smooth;
 }
 body{
-    width: 100%;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .nav{
@@ -14,9 +15,10 @@ body{
     justify-content: space-between;
     background-color: white;
     padding: 5px 0px;
-    position: sticky;
+    position: fixed;
     z-index: 1000;
     top: 0;
+    width: 100%;
 }
 
 .nav img{
@@ -49,6 +51,9 @@ body{
     color: white;
 }
 
+.nav-image h2{
+    text-align: center;
+}
 .fa-solid{
     font-size: 4rem;
     color: white;
@@ -93,6 +98,7 @@ body{
     justify-self: center;
     gap: 5em;
     margin: 50px 0px;
+    padding: 50px 0;
 }
 
 .oNas .oNas-text{
@@ -325,6 +331,9 @@ footer{
         background: transparent;
         border: none;
         cursor: pointer;
+    }
+    .nav-image h2{
+        font-size: 1.1rem;
     }
     .container-500px{
         display: flex;
