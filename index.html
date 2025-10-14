@@ -6,7 +6,7 @@
     <title>Coffee Room</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/1017934682.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -31,8 +31,8 @@
         <h1>Witamy w Coffe Room</h1>
         <h2>Najlepsza kawa w Łukowie - każda filiżanka podana z pasją</h2>
         <div class="nav-buttons-container">
-            <button>Sprawdź Menu</button>
-            <button>Skontaktuj się</button>
+            <button id="scrollToMenuButton" onclick="scrollToMenu()">Sprawdź Menu</button>
+            <button id="scrollToKontaktButton" onclick="scrollToKontakt()">Skontaktuj się</button>
         </div>
     </div>
     <main class="main">

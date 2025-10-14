@@ -1,5 +1,6 @@
 const nav = document.getElementsByClassName('nav');
-
+const menu = document.getElementById('menu')
+const kontakt = document.getElementById('kontakt')
 function openSidebar(){
     nav[0].classList.add('show');
 };
@@ -21,3 +22,10 @@ document.addEventListener('click', function(e){
         nav.classList.remove('show');
     }
 });
+
+function scrollToMenu(){
+    menu.scrollIntoView({behavior: "smooth", block: "start"});
+}
+function scrollToKontakt(){
+    kontakt.scrollIntoView({behavior: "smooth", block: "start"});
+}
