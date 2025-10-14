@@ -196,11 +196,23 @@ body{
     box-shadow: 8px 5px 16px -1px rgba(158,158,158,0.78);
     -webkit-box-shadow: 8px 5px 16px -1px rgba(158,158,158,0.78);
     -moz-box-shadow: 8px 5px 16px -1px rgba(158,158,158,0.78);
+    text-align: start;
 }
 
 .card h3{
     text-align: start;
     color: rgb(85, 85, 85);
+}
+
+.card #menuCardButton{
+    margin: 10px 0;
+    font-weight: 500;
+    border: none;
+    background-color: transparent;
+    align-self: flex-end;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .menuContainer .menuCards .card section{
