@@ -65,3 +65,9 @@ modal3.addEventListener('click', e => {
     modal3.close();
   }
 });
+
+function closeModal() {
+  modal1.close();
+  modal2.close();
+  modal3.close();
+}

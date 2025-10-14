@@ -161,18 +161,6 @@ body {
   gap: 6em;
 }
 
-.menuContainer .menu-images img {
-  width: 500px;
-  min-width: 200px;
-  height: 300px;
-  min-height: auto;
-  padding: 20px;
-  object-fit: cover;
-  border-radius: 30px;
-  opacity: 1;
-  transition: 200ms ease-in-out;
-}
-
 .menuContainer h3 {
   padding: 10px 0;
   color: rgb(143 143 143);
@@ -180,7 +168,7 @@ body {
 }
 
 .menuContainer .menu-images img {
-  width: 40%;
+  width: 100%;
   min-width: 200px;
   height: 300px;
   min-height: auto;
@@ -263,36 +251,6 @@ body {
   text-align: start;
 }
 
-.card-modal h3 {
-  color: rgb(85 85 85);
-}
-
-.card-modal section {
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    'nazwa cena'
-    'opis opis';
-}
-
-.card-modal section > .nazwa {
-  grid-area: nazwa;
-  font-weight: 500;
-  text-align: start;
-}
-
-.card-modal section > .cena {
-  grid-area: cena;
-  font-weight: 500;
-  text-align: end;
-}
-
-.card-modal section > .opis {
-  grid-area: opis;
-  font-size: 16px;
-  text-align: start;
-}
 .top-container {
   position: sticky;
   top: 0;
@@ -304,18 +262,6 @@ body {
   background-color: transparent;
   font-size: 1rem;
   cursor: pointer;
-}
-
-.card-modal {
-  display: flex; /* match .card container style */
-  flex-direction: column; /* vertical layout like .card */
-  width: 30%; /* same as .card */
-  padding: 10px;
-  gap: 10px;
-  border-radius: 15px;
-  background-color: white;
-  box-shadow: 8px 5px 16px -1px rgb(158 158 158 / 78%);
-  text-align: start;
 }
 
 #card1-modal {
@@ -569,6 +515,15 @@ footer .userInterface {
 }
 
 @media only screen and (width <= 500px) {
+  #card1-modal {
+    height: 100%;
+  }
+  #card2-modal {
+    height: 100%;
+  }
+  #card3-modal {
+    height: 100%;
+  }
   .oNas .oNas-text h3 {
     font-size: 1rem;
   }
@@ -659,7 +614,7 @@ footer .userInterface {
 
     .container-500px {
       display: flex;
-      z-index: 9999;
+      z-index: 9998;
       position: fixed;
       align-items: center;
       justify-content: space-between;
@@ -667,6 +622,9 @@ footer .userInterface {
       padding: 15px;
       padding-top: 25px;
       background-color: white;
+    }
+    .container-500px .openSidebar {
+      margin-right: 35px;
     }
 
     .container-500px p {
@@ -680,7 +638,7 @@ footer .userInterface {
 
     .nav {
       display: flex;
-      z-index: 2001;
+      z-index: 9999;
       position: fixed;
       top: 0;
       right: -100%;
