@@ -465,8 +465,10 @@ footer .userInterface{
     #first-line-navUl button{
         background: transparent;
         border: none;
-        padding: 5px;
         cursor: pointer;
         justify-self: end;
+    }
+    #first-line-navUl button i{
+        margin-right: 5px;
     }
 }
