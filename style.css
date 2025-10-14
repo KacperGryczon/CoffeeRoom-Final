@@ -401,6 +401,7 @@ footer .userInterface{
         justify-content: space-between;
         align-items: center;
         padding: 15px;
+        padding-top: 25px;
     }
     .container-500px p{
         font-size: 1.1rem;
@@ -463,7 +464,8 @@ footer .userInterface{
     #first-line-navUl button{
         background: transparent;
         border: none;
-        margin-right: 5px;
+        padding: 5px;
         cursor: pointer;
+        justify-self: end;
     }
 }
