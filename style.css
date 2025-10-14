@@ -62,21 +62,6 @@ body{
     color: white;
 }
 
-.nav-heading1{
-    letter-spacing: 2px;
-    font-size: 5.5rem;
-    font-weight: 400;
-    padding: 20px 0px;
-    text-align: center;
-}
-
-.nav-heading2{
-    font-weight: 350;
-    padding-bottom: 20px;
-    text-align: center;
-    align-self: center;
-}
-
 .nav-image button{
     padding: 10px 20px;
     background-color: white;
@@ -113,7 +98,7 @@ body{
     margin-bottom: 30px;
 }
 
-.oNas .oNas-text h3{
+.oNas .oNas-text p{
     color: rgb(143, 143, 143);
 }
 
@@ -140,7 +125,7 @@ body{
 /* MENU */
 .menu{
     background-color: rgb(245, 245, 245);  
-    padding: 10px 0;  
+    padding: 64px 0;  
     margin: 20px 0;
 }
 
@@ -152,17 +137,19 @@ body{
     text-align: center;
     font-size: 3rem;
     font-weight: 400;    
+    padding-bottom: 32px;
 }
-.menuContainer h3{
+.menuContainer p{
     text-align: center;
     padding: 10px 0px;
     color: rgb(143, 143, 143);
+    padding-bottom: 64px;
 }
 
 .menuContainer .menu-images{
     display: flex;
-    align-items: start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 .menuContainer .menu-images img{
     width: 500px;
@@ -259,10 +246,12 @@ body{
     text-align: center;
     font-size: 3rem;
     font-weight: 400; 
+    padding-top: 64px;
+    padding-bottom: 32px;
 }
-.kontakt .kontakt-h3{
+.kontakt .kontakt-p{
     text-align: center;
-    padding: 10px 0px;
+    padding-bottom: 64px;
     color: rgb(143, 143, 143);
 }
 
@@ -370,7 +359,8 @@ footer .userInterface{
 
 
 @media only screen and (max-width: 1024px){
-    #kontaktElement{ flex-basis: 100%; height: 70%; }
+    #kontaktElement{ flex-basis: 100%; height: 175px; }
+    #kontaktElement i{margin}
     .oNas{flex-wrap: wrap;}
     .oNas-img{ width: 100%; display: flex; justify-content: center;}
     .oNas-img img{text-align: center;}
@@ -379,7 +369,7 @@ footer .userInterface{
 
 @media only screen and (max-width: 800px){
     .oNas .oNas-text h2{font-size: 2rem;}
-    .oNas .oNas-text h3{font-size: 1rem; width: 100%;}
+    .oNas .oNas-text p{font-size: 1rem; width: 100%;}
     .menu-images{flex-wrap: wrap; justify-content: center;}
     .nav-buttons-container{flex-wrap: wrap;}
     .nav-buttons-container button{width: 100%;}
