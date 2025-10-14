@@ -29,3 +29,39 @@ function scrollToMenu() {
 function scrollToKontakt() {
   kontakt.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
+
+const modal1 = document.getElementById('card1-modal');
+const modal1Btn = document.getElementById('menuCard1Button');
+const modal2 = document.getElementById('card2-modal');
+const modal2Btn = document.getElementById('menuCard2Button');
+const modal3 = document.getElementById('card3-modal');
+const modal3Btn = document.getElementById('menuCard3Button');
+
+modal1Btn.addEventListener('click', () => {
+  modal1.showModal();
+});
+
+modal1.addEventListener('click', e => {
+  if (e.target === modal1) {
+    modal1.close();
+  }
+});
+
+modal2Btn.addEventListener('click', () => {
+  modal2.showModal();
+});
+
+modal2.addEventListener('click', e => {
+  if (e.target === modal2) {
+    modal2.close();
+  }
+});
+modal3Btn.addEventListener('click', () => {
+  modal3.showModal();
+});
+
+modal3.addEventListener('click', e => {
+  if (e.target === modal3) {
+    modal3.close();
+  }
+});

@@ -40,15 +40,18 @@ body {
   color: black;
   text-decoration: none;
 }
-.nav-image{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://images.unsplash.com/photo-1521017432531-fbd92d768814?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBzaG9wJTIwaW50ZXJpb3J8ZW58MXx8fHwxNzU5OTY0OTYzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral");
-    background-size: cover;
-    height: 700px;
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    color: white; 
+
+.nav-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  background:
+    linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)),
+    url('https://images.unsplash.com/photo-1521017432531-fbd92d768814?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBzaG9wJTIwaW50ZXJpb3J8ZW58MXx8fHwxNzU5OTY0OTYzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral');
+  background-size: cover;
+  color: white;
 }
 
 .nav-image h1 {
@@ -59,7 +62,6 @@ body {
   padding: 20px 0;
   text-align: center;
 }
-
 
 .fa-solid {
   color: white;
@@ -99,11 +101,11 @@ body {
   width: 100%;
 }
 
-.oNas .oNas-text p{
-    color: rgb(143, 143, 143);
+.oNas .oNas-text .oNas-heading2 {
+  padding: 32px 0;
 }
 
-.oNas .oNas-text h3 {
+.oNas .oNas-text .oNas-heading3 {
   color: rgb(143 143 143);
 }
 
@@ -128,46 +130,48 @@ body {
 }
 
 /* MENU */
-.menu{
-    background-color: rgb(245, 245, 245);  
-    padding: 64px 0;  
-    margin: 20px 0;
+.menu {
+  margin: 20px 0;
+  padding: 64px 0;
+  background-color: rgb(245 245 245);
 }
 
-.menuContainer{
-    width: 80%;
-    justify-self: center;
-}
-.menuContainer h2{
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 400;    
-    padding-bottom: 32px;
-}
-.menuContainer p{
-    text-align: center;
-    padding: 10px 0px;
-    color: rgb(143, 143, 143);
-    padding-bottom: 64px;
+.menuContainer {
+  justify-self: center;
+  width: 80%;
 }
 
-.menuContainer .menu-images{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.menuContainer .menu-images img{
-    width: 500px;
-    height: 300px;
-    object-fit: cover;
-    padding: 20px;
-    border-radius: 30px;
-    min-width: 200px;
-    min-height: auto;
-    opacity: 100%;
-    transition: 200ms ease-in-out;
+.menuContainer h2 {
+  padding-bottom: 32px;
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
 }
 
+.menuContainer p {
+  padding: 10px 0;
+  padding-bottom: 64px;
+  color: rgb(143 143 143);
+  text-align: center;
+}
+
+.menuContainer .menu-images {
+  display: flex;
+  justify-content: center;
+  gap: 6em;
+}
+
+.menuContainer .menu-images img {
+  width: 500px;
+  min-width: 200px;
+  height: 300px;
+  min-height: auto;
+  padding: 20px;
+  object-fit: cover;
+  border-radius: 30px;
+  opacity: 1;
+  transition: 200ms ease-in-out;
+}
 
 .menuContainer h3 {
   padding: 10px 0;
@@ -175,14 +179,8 @@ body {
   text-align: center;
 }
 
-.menuContainer .menu-images {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-}
-
 .menuContainer .menu-images img {
-  width: 500px;
+  width: 40%;
   min-width: 200px;
   height: 300px;
   min-height: auto;
@@ -221,7 +219,9 @@ body {
   text-align: start;
 }
 
-.card #menuCardButton {
+.card #menuCard1Button,
+#menuCard2Button,
+#menuCard3Button {
   display: block;
   align-self: flex-end;
   margin: 10px 0;
@@ -230,6 +230,7 @@ body {
   border: none;
   background-color: transparent;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .menuContainer .menuCards .card section {
@@ -262,6 +263,97 @@ body {
   text-align: start;
 }
 
+.card-modal h3 {
+  color: rgb(85 85 85);
+}
+
+.card-modal section {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'nazwa cena'
+    'opis opis';
+}
+
+.card-modal section > .nazwa {
+  grid-area: nazwa;
+  font-weight: 500;
+  text-align: start;
+}
+
+.card-modal section > .cena {
+  grid-area: cena;
+  font-weight: 500;
+  text-align: end;
+}
+
+.card-modal section > .opis {
+  grid-area: opis;
+  font-size: 16px;
+  text-align: start;
+}
+.top-container {
+  position: sticky;
+  top: 0;
+  text-align: end;
+}
+.top-container button {
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.card-modal {
+  display: flex; /* match .card container style */
+  flex-direction: column; /* vertical layout like .card */
+  width: 30%; /* same as .card */
+  padding: 10px;
+  gap: 10px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 8px 5px 16px -1px rgb(158 158 158 / 78%);
+  text-align: start;
+}
+
+#card1-modal {
+  place-self: center center;
+  width: 70%;
+  max-height: 500px;
+  margin: 0; /* Remove horizontal margin for pure space-between */
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgb(255 255 255);
+  box-shadow: 8px 5px 16px -1px rgb(158 158 158 / 78%);
+  text-align: start;
+}
+
+#card2-modal {
+  place-self: center center;
+  width: 70%;
+  max-height: 500px;
+  margin: 0; /* Remove horizontal margin for pure space-between */
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgb(255 255 255);
+  box-shadow: 8px 5px 16px -1px rgb(158 158 158 / 78%);
+  text-align: start;
+}
+
+#card3-modal {
+  place-self: center center;
+  width: 70%;
+  max-height: 500px;
+  margin: 0; /* Remove horizontal margin for pure space-between */
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgb(255 255 255);
+  box-shadow: 8px 5px 16px -1px rgb(158 158 158 / 78%);
+  text-align: start;
+}
+
 /* KONTAKT */
 
 .kontakt {
@@ -273,14 +365,12 @@ body {
   margin: 40px 0;
 }
 
-
-
 .kontakt .kontakt-h2 {
+  padding-top: 64px;
+  padding-bottom: 32px;
   font-weight: 400;
   font-size: 3rem;
   text-align: center;
-  padding-top: 64px;
-  padding-bottom: 32px;
 }
 
 .kontakt .kontakt-p {
@@ -332,7 +422,9 @@ body {
 
 iframe {
   width: 100%;
+  height: 300px;
   max-height: 500px;
+  border: none;
   border-radius: 15px;
 }
 
@@ -401,6 +493,9 @@ footer .userInterface {
   #kontaktElement {
     flex-basis: 45%;
   }
+  .menuContainer .menu-images {
+    gap: 3em;
+  }
 
   .menuCards .card {
     flex-basis: 100%;
@@ -435,6 +530,10 @@ footer .userInterface {
 @media only screen and (width <= 800px) {
   .oNas .oNas-text h2 {
     font-size: 2rem;
+  }
+
+  .menuContainer .menu-images {
+    gap: 1em;
   }
 
   .oNas .oNas-text h3 {
@@ -474,121 +573,177 @@ footer .userInterface {
     font-size: 1rem;
   }
 
-@media only screen and (max-width: 1024px){
-    #kontaktElement{ flex-basis: 100%; height: 175px;}
-    .oNas{flex-wrap: wrap;}
-    .oNas-img{ width: 100%; display: flex; justify-content: center;}
-    .oNas-img img{text-align: center;}
-    .nav-heading1{font-size: 4.5rem;}
-}
-
-@media only screen and (max-width: 800px){
-    .oNas .oNas-text h2{font-size: 2rem;}
-    .oNas .oNas-text p{font-size: 1rem; width: 100%;}
-    .menu-images{flex-wrap: wrap; justify-content: center;}
-    .nav-buttons-container{flex-wrap: wrap;}
-    .nav-buttons-container button{width: 100%;}
-    footer{
-        height: 800px;
-    }
-    footer .userInterface #section{
-        flex-basis: 100%;
-        padding-left: 20px;
-    }
-    .kawiarnia-section{
-        padding-top: 50px;
-    }
-}
-
-@media only screen and (max-width: 500px){
-    .oNas .oNas-text h3{font-size: 1rem;}
-    .openSidebar, .closeSidebar{
-        display: block;
-    }
-    .openSidebar{
-        justify-self: end;
-        padding: 5px;
-        background: transparent;
-        border: none;
-        cursor: pointer;
-    }
-    .nav-image h2{
-        font-size: 1.1rem;
-    }
-    .container-500px{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px;
-        padding-top: 25px;
-        margin-left: 15px;
-    }
-    .container-500px p{
-        font-size: 1.1rem;
-        font-weight: 500;
-    }
-    .container-500px p i{
-        padding: 0 10px;
-    }
-    .nav{
-        position: fixed;
-        top: 0;
-        right: -100%;
-        height: 30%;
-        width: 100%;
-        z-index: 2001;
-        border-left: 1px solid black;
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
-        transition: top 300ms ease-out;
-    }
-    .nav.show{
-        right: 0;
-        border-bottom: 1px solid black;
-    }
-    .nav img{
-        display: none;
-    }
-    .nav ul{
-        width: 100%;
-        flex-direction: column;
-        margin-top: 10px;
-    }
-    .nav li{
-        text-align: start;
-        margin: 10px;
-        width: 100%;
-    }
-    .nav a{
-        width: 100%;
-        padding: 20px;
-        font-weight: 400;
+  @media only screen and (width <= 1024px) {
+    #kontaktElement {
+      flex-basis: 100%;
+      height: 175px;
     }
 
-    iframe{
-        max-height: 250px;
+    .oNas {
+      flex-wrap: wrap;
     }
 
-    #first-line-navUl{
-        display: flex;
-        justify-content: space-between;
-        padding-left: 20px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid gray;
-        font-size: 1.1rem;
-        font-weight: 500;
-        width: 99%;
-        justify-self: center;
+    .oNas-img {
+      display: flex;
+      justify-content: center;
+      width: 100%;
     }
-    #first-line-navUl button{
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        justify-self: end;
+
+    .oNas-img img {
+      text-align: center;
     }
-    #first-line-navUl button i{
-        margin-right: 20px;
+
+    .nav-heading1 {
+      font-size: 4.5rem;
     }
-}
+  }
+
+  @media only screen and (width <= 800px) {
+    .oNas .oNas-text h2 {
+      font-size: 2rem;
+    }
+
+    .oNas .oNas-text p {
+      width: 100%;
+      font-size: 1rem;
+    }
+
+    .menu-images {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .nav-buttons-container {
+      flex-wrap: wrap;
+    }
+
+    .nav-buttons-container button {
+      width: 100%;
+    }
+
+    footer {
+      height: 800px;
+    }
+
+    footer .userInterface #section {
+      flex-basis: 100%;
+      padding-left: 20px;
+    }
+
+    .kawiarnia-section {
+      padding-top: 50px;
+    }
+  }
+
+  @media only screen and (width <= 500px) {
+    .oNas .oNas-text .oNas-heading2 {
+      padding: 16px 0;
+    }
+
+    .openSidebar,
+    .closeSidebar {
+      display: block;
+    }
+
+    .openSidebar {
+      justify-self: end;
+      padding: 5px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .nav-image h2 {
+      font-size: 1.1rem;
+    }
+
+    .container-500px {
+      display: flex;
+      z-index: 9999;
+      position: fixed;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 15px;
+      padding-top: 25px;
+      background-color: white;
+    }
+
+    .container-500px p {
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+
+    .container-500px p i {
+      padding: 0 10px;
+    }
+
+    .nav {
+      display: flex;
+      z-index: 2001;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      align-items: start;
+      justify-content: space-between;
+      width: 100%;
+      height: 30%;
+      border-left: 1px solid black;
+      transition: top 300ms ease-out;
+    }
+
+    .nav.show {
+      right: 0;
+      border-bottom: 1px solid black;
+    }
+
+    .nav img {
+      display: none;
+    }
+
+    .nav ul {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav li {
+      width: 100%;
+      margin: 10px;
+      text-align: start;
+    }
+
+    .nav a {
+      width: 100%;
+      padding: 20px;
+      font-weight: 400;
+    }
+
+    iframe {
+      max-height: 250px;
+    }
+
+    #first-line-navUl {
+      display: flex;
+      justify-content: space-between;
+      justify-self: center;
+      width: 99%;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      border-bottom: 1px solid gray;
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+
+    #first-line-navUl button {
+      justify-self: end;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    #first-line-navUl button i {
+      margin-right: 20px;
+    }
+  }
 }
