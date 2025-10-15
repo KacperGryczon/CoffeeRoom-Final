@@ -5,6 +5,14 @@
   scroll-behavior: smooth;
 }
 
+:root {
+  --spacing-top-h1: 32px;
+  --spacing-top-h2: 64px;
+  --spacing-bottom-h2: 32px;
+  --spacing-top-p: 32px;
+  --spacing-bottom-p: 64px;
+}
+
 body {
   width: 100vw;
   overflow-x: hidden;
@@ -55,6 +63,7 @@ body {
 }
 
 .nav-image h1 {
+  padding-top: var(--spacing-top-h1);
   text-align: center;
 }
 
@@ -106,6 +115,7 @@ body {
 }
 
 .oNas .oNas-text .oNas-heading3 {
+  padding-top: var(--spacing-top-p);
   color: rgb(143 143 143);
 }
 
@@ -142,7 +152,8 @@ body {
 }
 
 .menuContainer h2 {
-  padding-bottom: 32px;
+  padding-top: var(--spacing-top-h2);
+  padding-bottom: var(--spacing-bottom-h2);
   font-weight: 400;
   font-size: 3rem;
   text-align: center;
@@ -169,7 +180,6 @@ body {
 
 .menuContainer .menu-images img {
   width: 100%;
-  min-width: 200px;
   height: 300px;
   min-height: auto;
   padding: 20px;
@@ -206,6 +216,11 @@ body {
   color: rgb(85 85 85);
   text-align: start;
 }
+#menuCard3Button {
+  width: 113.52px;
+  font-weight: 500;
+  font-size: 13.3333px;
+}
 
 .card #menuCard1Button,
 #menuCard2Button,
@@ -233,7 +248,7 @@ body {
 .menuContainer .menuCards .card section > .nazwa {
   grid-area: nazwa;
   color: black;
-  font-weight: 500;
+  font-weight: 600;
   text-align: start;
 }
 
@@ -246,7 +261,9 @@ body {
 
 .menuContainer .menuCards .card section > .opis {
   grid-area: opis;
+  margin-top: 4px;
   padding: 4px;
+  color: #5e5e5e;
   font-size: 16px;
   text-align: start;
 }
@@ -259,7 +276,8 @@ body {
 .top-container button {
   padding: 10px;
   border: none;
-  background-color: transparent;
+  border-radius: 50%;
+  background-color: white;
   font-size: 1rem;
   cursor: pointer;
 }
@@ -312,8 +330,8 @@ body {
 }
 
 .kontakt .kontakt-h2 {
-  padding-top: 64px;
-  padding-bottom: 32px;
+  padding-top: var(--spacing-top-h2);
+  padding-bottom: var(--spacing-bottom-h2);
   font-weight: 400;
   font-size: 3rem;
   text-align: center;
@@ -380,7 +398,6 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 600px;
   gap: 3rem;
   background-color: rgb(21 17 35);
   color: white;
@@ -405,7 +422,8 @@ footer .userInterface {
   justify-content: space-around;
   width: 100%;
   margin: 0 50px;
-  padding-bottom: 20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   gap: 3rem;
   border-bottom: 1px solid gray;
 }
@@ -501,7 +519,7 @@ footer .userInterface {
   }
 
   footer {
-    height: 800px;
+    height: auto;
   }
 
   footer .userInterface #section {
@@ -679,6 +697,14 @@ footer .userInterface {
 
     iframe {
       max-height: 250px;
+    }
+
+    .menuContainer h2 {
+      padding-bottom: 16px;
+    }
+
+    .menuContainer p {
+      padding-bottom: 32px;
     }
 
     #first-line-navUl {

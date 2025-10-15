@@ -14,8 +14,8 @@
   </head>
   <body>
     <div class="container-500px">
-      <p>Coffe Room <i class="fa-solid fa-mug-hot fa-sm" style="color: #000000"></i></p>
-      <button class="openSidebar" onclick="openSidebar()">
+      <p>Coffee Room <i class="fa-solid fa-mug-hot fa-sm" style="color: #000000"></i></p>
+      <button class="openSidebar"class="modalBtn" onclick="openSidebar()">
         <i class="fa-solid fa-bars fa-2xl" style="color: #000000"></i>
       </button>
     </div>
@@ -24,9 +24,9 @@
       <ul>
         <li id="first-line-navUl">
           <div class="first-line-navUl-firstElement">
-            Coffe Room <i class="fa-solid fa-mug-hot fa-sm" style="color: #000000"></i>
+            Coffee Room <i class="fa-solid fa-mug-hot fa-sm" style="color: #000000"></i>
           </div>
-          <button class="closeSidebar" onclick="closeSidebar()">
+          <button class="closeSidebar"class="modalBtn" onclick="closeSidebar()">
             <i class="fa-solid fa-xmark fa-2xl" style="color: #000000"></i>
           </button>
         </li>
@@ -38,11 +38,11 @@
     </nav>
     <div id="start" class="nav-image">
       <i class="fa-solid fa-mug-hot"></i>
-      <h1>Witamy w Coffe Room</h1>
+      <h1>Witamy w Coffee Room</h1>
       <h2>Najlepsza kawa w Łukowie - każda filiżanka podana z pasją</h2>
       <div class="nav-buttons-container">
-        <button id="scrollToMenuButton" onclick="scrollToMenu()">Sprawdź Menu</button>
-        <button id="scrollToKontaktButton" onclick="scrollToKontakt()">Skontaktuj się</button>
+        <button id="scrollToMenuButton"class="modalBtn" onclick="scrollToMenu()">Sprawdź Menu</button>
+        <button id="scrollToKontaktButton"class="modalBtn" onclick="scrollToKontakt()">Skontaktuj się</button>
       </div>
     </div>
     <main class="main">
@@ -93,7 +93,7 @@
               <hr />
               <dialog id="card1-modal">
                 <div class="top-container">
-                  <button onclick="closeModal()">
+                  <button class="modalBtn" onclick="closeModal()">
                     <i class="fa-solid fa-xmark fa-2xl" style="color: #000000"></i>
                   </button>
                 </div>
@@ -145,7 +145,7 @@
 
               <dialog id="card2-modal">
                 <div class="top-container">
-                  <button onclick="closeModal()">
+                  <button class="modalBtn" onclick="closeModal()">
                     <i class="fa-solid fa-xmark fa-2xl" style="color: #000000"></i>
                   </button>
                 </div>
@@ -286,7 +286,7 @@
               <hr />
               <dialog id="card3-modal">
                 <div class="top-container">
-                  <button onclick="closeModal()">
+                  <button class="modalBtn" onclick="closeModal()">
                     <i class="fa-solid fa-xmark fa-2xl" style="color: #000000"></i>
                   </button>
                 </div>
@@ -312,7 +312,7 @@
                   <hr />
                 </div>
               </dialog>
-              <button onclick="openCard3()" id="menuCard3Button">Dowiedz się więcej</button>
+              <buttonclass="modalBtn" onclick="openCard3()" id="menuCard3Button">Dowiedz się więcej</buttonclass=>
             </div>
           </div>
         </div>
@@ -368,7 +368,7 @@
     <footer>
       <div class="userInterface">
         <div id="section" class="kawiarnia-section">
-          <h2>Coffe Room</h2>
+          <h2>Coffee Room</h2>
           <h3>Najlepsza kawa w mieście. Serwujemy pasję w każdej filiżance.</h3>
         </div>
         <div id="section" class="szybkieLinki-section">
@@ -397,7 +397,7 @@
         </div>
       </div>
       <div class="copyright">
-        <h2>© 2025 Kawiarnia Łuków. Wszystkie prawa zastrzeżone.</h2>
+        <h2>© 2025 Coffee Room Łuków. Wszelkie prawa zastrzeżone.</h2>
       </div>
     </footer>
   </body>
