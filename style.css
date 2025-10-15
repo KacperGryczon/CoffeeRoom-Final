@@ -246,6 +246,10 @@ body {
     'nazwa cena'
     'opis opis';
 }
+.menuContainer .menuCards .card hr {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
 
 .menuContainer .menuCards .card section > .nazwa {
   grid-area: nazwa;
