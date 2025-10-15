@@ -208,7 +208,9 @@ body {
   padding: 10px;
   border-radius: 15px;
   background-color: white;
-  box-shadow: 8px 5px 16px -1px rgb(158 158 158 / 78%);
+  -webkit-box-shadow: 0px 0px 16px 5px rgba(152, 153, 154, 1);
+  -moz-box-shadow: 0px 0px 16px 5px rgba(152, 153, 154, 1);
+  box-shadow: 0px 0px 16px 5px rgba(152, 153, 154, 1);
   text-align: start;
 }
 
@@ -290,7 +292,9 @@ body {
   padding: 10px;
   border-radius: 15px;
   background-color: rgb(255 255 255);
-  box-shadow: 8px 5px 16px -1px rgb(158 158 158 / 78%);
+  -webkit-box-shadow: 0px 0px 16px 5px rgba(152, 153, 154, 1);
+  -moz-box-shadow: 0px 0px 16px 5px rgba(152, 153, 154, 1);
+  box-shadow: 0px 0px 16px 5px rgba(152, 153, 154, 1);
   text-align: start;
 }
 
@@ -302,7 +306,9 @@ body {
   padding: 10px;
   border-radius: 15px;
   background-color: rgb(255 255 255);
-  box-shadow: 8px 5px 16px -1px rgb(158 158 158 / 78%);
+  -webkit-box-shadow: 0px 0px 16px 5px rgba(152, 153, 154, 1);
+  -moz-box-shadow: 0px 0px 16px 5px rgba(152, 153, 154, 1);
+  box-shadow: 0px 0px 16px 5px rgba(152, 153, 154, 1);
   text-align: start;
 }
 
@@ -314,7 +320,9 @@ body {
   padding: 10px;
   border-radius: 15px;
   background-color: rgb(255 255 255);
-  box-shadow: 8px 5px 16px -1px rgb(158 158 158 / 78%);
+  -webkit-box-shadow: 0px 0px 16px 5px rgba(152, 153, 154, 1);
+  -moz-box-shadow: 0px 0px 16px 5px rgba(152, 153, 154, 1);
+  box-shadow: 0px 0px 16px 5px rgba(152, 153, 154, 1);
   text-align: start;
 }
 
