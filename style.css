@@ -600,10 +600,10 @@ footer .userInterface {
     }
 
     .kontakt-h2 {
-      padding-top: 32px;
+      padding-top: 24px;
     }
     .kontakt-p {
-      padding-bottom: 32px;
+      padding-bottom: 24px;
     }
     .nav-buttons-container {
       flex-wrap: wrap;
@@ -624,6 +624,9 @@ footer .userInterface {
   }
 
   @media only screen and (width <= 500px) {
+    .oNas {
+      margin-top: 0;
+    }
     .oNas .oNas-text .oNas-heading2 {
       padding: 16px 0;
     }
