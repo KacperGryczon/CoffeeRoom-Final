@@ -111,7 +111,7 @@ body {
 }
 
 .oNas .oNas-text .oNas-heading2 {
-  padding: 32px 0;
+  padding-bottom: 32px;
 }
 
 .oNas .oNas-text .oNas-heading3 {
@@ -557,6 +557,9 @@ footer .userInterface {
   .oNas .oNas-text p {
     font-size: 1rem;
   }
+  .kontkat .kontakt-p {
+    padding-bottom: 32px;
+  }
 
   @media only screen and (width <= 1024px) {
     #kontaktElement {
@@ -565,16 +568,6 @@ footer .userInterface {
 
     .oNas {
       flex-wrap: wrap;
-    }
-
-    .oNas-img {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
-
-    .oNas-img img {
-      text-align: center;
     }
 
     .nav-heading1 {
@@ -606,9 +599,7 @@ footer .userInterface {
     .kontakt-h2 {
       padding-top: 24px;
     }
-    .kontakt-p {
-      padding-bottom: 24px;
-    }
+
     .nav-buttons-container {
       flex-wrap: wrap;
     }
@@ -632,7 +623,8 @@ footer .userInterface {
       margin-top: 0;
     }
     .oNas .oNas-text .oNas-heading2 {
-      padding: 16px 0;
+      padding-top: 32px;
+      padding-bottom: 16px;
     }
 
     .openSidebar,
@@ -646,6 +638,16 @@ footer .userInterface {
       border: none;
       background: transparent;
       cursor: pointer;
+    }
+    .kontakt .kontakt-h2 {
+      padding-top: 32px;
+      padding-bottom: 16px;
+    }
+    .kontakt .kontakt-p {
+      padding-top: 10px;
+      padding-bottom: 32px;
+      color: rgb(143 143 143);
+      text-align: center;
     }
 
     .nav-image h2 {
@@ -719,6 +721,9 @@ footer .userInterface {
 
     iframe {
       max-height: 250px;
+    }
+    .menuContainer .menuCards {
+      gap: 2em;
     }
 
     .menuContainer h2 {
